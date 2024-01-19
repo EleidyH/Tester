@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Play</title>
+    <!-- Include your payment gateway's script -->
+    <script src="https://your-payment-gateway-script-url"></script>
+</head>
+<body>
+
+<h1>Donate to Play</h1>
+<p>Support our project by making a donation to play.</p>
+
+<!-- Replace 'YOUR_PUBLIC_KEY' with your actual public key from the payment gateway -->
+<button id="donateButton" onclick="handleDonate()">Donate to Play</button>
+
+<script>
+    // Function to handle the donation process
+    function handleDonate() {
+        // Replace 'YOUR_PUBLIC_KEY' with your actual public key from the payment gateway
+        const publicKey = 'YOUR_PUBLIC_KEY';
+
+        // Replace 'YOUR_AMOUNT' with the desired donation amount
+        const amount = 'YOUR_AMOUNT';
+
+        // Create a payment request
+        const paymentRequest = {
+            publicKey,
+            amount,
+            // Add other necessary parameters as required by your payment gateway
+        };
+
+        // Call your payment gateway's API to initiate the payment
+        // Replace 'YOUR_PAYMENT_API_URL' with your actual payment gateway API URL
+        fetch('YOUR_PAYMENT_API_URL', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(paymentRequest),
+        })
+        .then(response => response.json())
+        .then(responseData => {
+            // Handle the response from the payment gateway
+            // Redirect to the payment gateway's checkout page or take appropriate action
+            window.location.href = responseData.checkoutUrl;
+        })
+        .catch(error => {
+            console.error('Error initiating donation:', error);
+            // Handle errors as needed
+        });
+    }
+</script>
+
+</body>
+</html>

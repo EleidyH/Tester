@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testweb.css">
+    <title>Portofolio</title>
+    <script src="testweb.js"></script>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav-body">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="favogoeddoel.html">Goed Doel</a></li>
+                <li><a href="Portofolio.html">Portofolio</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Info game.html">Info Game</a></li>
+                <li><a href="self game.html">Self Game</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Loguit</a></li>
+            </ul>
+            <ul>
+                <li class="Logo"><a href="#"><img src="img/NFT_WorldGameDevelop.avif" alt="Logo"></a></li>
+                <li class="hideOnMobile"><a href="Homepage.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
+                <li class="hideOnMobile"><a href="favogoeddoel.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg></a></li>
+                <li class="hideOnMobile"><a href="Portofolio.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></svg></a>
+                    <ul class="Dropdown">
+                        <li><a href="Eleidy.html">Eleidy</a></li>
+                        <li><a href="Micheal.html">Micheal</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="Games.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M182-200q-51 0-79-35.5T82-322l42-300q9-60 53.5-99T282-760h396q60 0 104.5 39t53.5 99l42 300q7 51-21 86.5T778-200q-21 0-39-7.5T706-230l-90-90H344l-90 90q-15 15-33 22.5t-39 7.5Zm16-86 114-114h336l114 114q2 2 16 6 11 0 17.5-6.5T800-304l-44-308q-4-29-26-48.5T678-680H282q-30 0-52 19.5T204-612l-44 308q-2 11 4.5 17.5T182-280q2 0 16-6Zm482-154q17 0 28.5-11.5T720-480q0-17-11.5-28.5T680-520q-17 0-28.5 11.5T640-480q0 17 11.5 28.5T680-440Zm-80-120q17 0 28.5-11.5T640-600q0-17-11.5-28.5T600-640q-17 0-28.5 11.5T560-600q0 17 11.5 28.5T600-560ZM310-440h60v-70h70v-60h-70v-70h-60v70h-70v60h70v70Zm170-40Z"/></svg></a></li>
+                <li class="hideOnMobile"><a href="Info game.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M160-240q-33 0-56.5-23.5T80-320v-320q0-33 23.5-56.5T160-720h640q33 0 56.5 23.5T880-640v320q0 33-23.5 56.5T800-240H160Zm0-80h640v-320H160v320Zm120-40h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80Zm300 0q25 0 42.5-17.5T640-420q0-25-17.5-42.5T580-480q-25 0-42.5 17.5T520-420q0 25 17.5 42.5T580-360Zm120-120q25 0 42.5-17.5T760-540q0-25-17.5-42.5T700-600q-25 0-42.5 17.5T640-540q0 25 17.5 42.5T700-480ZM160-320v-320 320Z"/></svg></a></li>
+                <li class="hideOnMobile"><a href="self game.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M189-160q-60 0-102.5-43T42-307q0-9 1-18t3-18l84-336q14-54 57-87.5t98-33.5h390q55 0 98 33.5t57 87.5l84 336q2 9 3.5 18.5T919-306q0 61-43.5 103.5T771-160q-42 0-78-22t-54-60l-28-58q-5-10-15-15t-21-5H385q-11 0-21 5t-15 15l-28 58q-18 38-54 60t-78 22Zm3-80q19 0 34.5-10t23.5-27l28-57q15-31 44-48.5t63-17.5h190q34 0 63 18t45 48l28 57q8 17 23.5 27t34.5 10q28 0 48-18.5t21-46.5q0 1-2-19l-84-335q-7-27-28-44t-49-17H285q-28 0-49.5 17T208-659l-84 335q-2 6-2 18 0 28 20.5 47t49.5 19Zm348-280q17 0 28.5-11.5T580-560q0-17-11.5-28.5T540-600q-17 0-28.5 11.5T500-560q0 17 11.5 28.5T540-520Zm80-80q17 0 28.5-11.5T660-640q0-17-11.5-28.5T620-680q-17 0-28.5 11.5T580-640q0 17 11.5 28.5T620-600Zm0 160q17 0 28.5-11.5T660-480q0-17-11.5-28.5T620-520q-17 0-28.5 11.5T580-480q0 17 11.5 28.5T620-440Zm80-80q17 0 28.5-11.5T740-560q0-17-11.5-28.5T700-600q-17 0-28.5 11.5T660-560q0 17 11.5 28.5T700-520Zm-360 60q13 0 21.5-8.5T370-490v-40h40q13 0 21.5-8.5T440-560q0-13-8.5-21.5T410-590h-40v-40q0-13-8.5-21.5T340-660q-13 0-21.5 8.5T310-630v40h-40q-13 0-21.5 8.5T240-560q0 13 8.5 21.5T270-530h40v40q0 13 8.5 21.5T340-460Zm140-20Z"/></svg></a>
+                    <ul class="Dropdown">
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Blackjack</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a></li>
+                <li class="hideOnMobile"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg></a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="portofolio-body">
+        <div class="wrapper">
+            <div class="cover cover-left"></div>
+            <div class="cover cover-right"></div>
+    
+            <div class="book">
+                <!--profile page-->
+                <div class="book-page page-left">
+                    <div class="profile-page">
+                        <img src="img/Eleidy.jpg" alt="Eleidy">
+                        <h1>Eleidy Hoyer</h1>
+                        <h3>Software Developer</h3>
+    
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-discord'></i></a>
+                            <a href="https://www.linkedin.com/in/eleidy-hoyer-b8975925a/"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        </div>
+    
+                        <p>Hello, ik ben Eleidy Hoyer, een Software Developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. At blanditiis, 
+                        fuga itaque tempore, ea alias quasi error explicabo nobis, earum natus eos quis nisi velit cumque doloribus vitae adipisci reiciendis.</p>
+    
+                        <div class="btn-box">
+                            <a href="#" class="btn">Download CV</a>
+                            <a href="#" class="btn contact-me">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- page 1 & 2 -->
+                <div class="book-page page-right turn" id="turn-1">
+                    <!-- page 1 (work exxperience) -->
+                    <div class="page-front">
+                        <h1 class="title">Work Experience</h1>
+    
+                        <div class="workeduc-box">
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2021 - 2022</span>
+                                <h3>Flink - Company</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt laboriosam sunt voluptates, neque consequuntur explicabo eligendi quae! Cumque, architecto?</p>
+                            </div>
+    
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2022 - 2023</span>
+                                <h3>Picnic - Company</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati eum minima. Ab deserunt nihil ut corrupti placeat quidem magni.</p>
+                            </div>
+    
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2023 - 2024</span>
+                                <h3>Flink - Company</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia, rem et animi expedita cupiditate doloremque quis error voluptatibus. Quam.</p>
+                            </div>
+                        </div>
+    
+                        <span class="number-page">1</span>
+    
+                        <!--Next button-->
+                        <span class="nextprev-btn" data-page ="turn-1">
+                            <i class='bx bx-chevron-right'></i>
+                        </span>
+                    </div>
+                    
+                    <!-- page 2 (education) -->
+                    <div class="page-back">
+                        <h1 class="title">Education</h1>
+    
+                        <div class="workeduc-box">
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2021 - 2022</span>
+                                <h3>Medewerker ICT Support - TCR</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt laboriosam sunt voluptates, neque consequuntur explicabo eligendi quae! Cumque, architecto?</p>
+                            </div>
+    
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2022 - 2023</span>
+                                <h3>Gemeente Rotterdam - Stage</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati eum minima. Ab deserunt nihil ut corrupti placeat quidem magni.</p>
+                            </div>
+    
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2023 - 2026</span>
+                                <h3>Software Developer - TCR</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia, rem et animi expedita cupiditate doloremque quis error voluptatibus. Quam.</p>
+                            </div>
+                        </div>
+    
+                        <span class="number-page">2</span>
+    
+                        <!--prev button-->
+                        <span class="nextprev-btn back" data-page="turn-1">
+                            <i class='bx bx-chevron-left'></i>
+                        </span>
+                    </div>
+                </div>
+    
+                <!-- page 3 & 4 -->
+                <div class="book-page page-right turn" id="turn-2">
+                    <!--page 3 (my services)--><div class="page-front">
+                        <h1 class="title">My services</h1>
+    
+                        <div class="services-box">
+                            <div class="services-content">
+                                <i class='bx bx-support' ></i>
+                                <h3>ICT Support</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+    
+                            <div class="services-content">
+                                <i class='bx bx-code-alt'></i>
+                                <h3>Software Developer</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+    
+                            <div class="services-content">
+                                <i class='bx bx-code-alt'></i>
+                                <h3>Web Developer</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+    
+    
+                            <div class="services-content">
+                                <i class='bx bx-code-alt'></i>
+                                <h3>Systeem en Devices</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                        </div>
+    
+                        <span class="number-page">3</span>
+    
+                        <!--Next button-->
+                        <span class="nextprev-btn" data-page="turn-2">
+                            <i class='bx bx-chevron-right'></i>
+                        </span>
+                    </div>
+                    
+                    <!--page 4 (my skills)-->
+                    <div class="page-back">
+                        <h1 class="title">My Skills</h1>
+    
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <h3>Front-End</h3>
+                                <div class="content">
+                                    <span><i class='bx bxl-html5' ></i>HTML</span>
+                                    <span><i class='bx bxl-css3' ></i>CSS</span>
+                                    <span><i class='bx bxl-javascript' ></i>JS</span>
+                                    <span><i class='bx bxl-php' ></i>PHP</span>
+                                </div>
+                            </div>
+    
+                            <div class="skills-content">
+                                <h3>Back-End</h3>
+                                <div class="content">
+                                    <span>MYSQL</span>
+                                    <span><i class='bx bxl-php' ></i>PHP</span>
+                                    <span><i class='bx bxl-javascript' ></i>JS</span>
+                                </div>
+                            </div>
+    
+                            <div class="skills-content">
+                                <h3>Learning</h3>
+                                <div class="content">
+                                    <span><i class='bx bxl-python' ></i>Python</span>
+                                    <span><i class='bx bxl-java' ></i>Java</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <span class="number-page">4</span>
+    
+                        <!--prev button-->
+                        <span class="nextprev-btn back" data-page ="turn-2">
+                            <i class='bx bx-chevron-left'></i>
+                        </span>
+                    </div>
+                </div>
+    
+                <!-- page 5 & 6 -->
+                <div class="book-page page-right turn" id="turn-3">
+                    <!--Page 5 (latest project or my portofolio)-->
+                    <div class="page-front">
+                        <h1 class="title">Latest Project</h1>
+    
+                        <div class="portofolio-box">
+                            <div class="img-box">
+                                <img src="img/portfolio.jpg" alt="">
+                            </div>
+                            
+                            <div class="info-box">
+                                <div class="info-title">
+                                    <h3>Project Name</h3>
+                                    <a href="">Live Preview<i class='bx bx-link-external'></i></a>
+                                </div>
+                                <p>Tech Used:</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero nam cumque voluptatum harum facere tenetur,
+                                 eligendi nesciunt omnis perspiciatis sint.</p>
+                            </div>
+        
+                            <div class="btn-box">
+                                <a href="" class="btn">Source Code</a>
+                                <a href="" class="btn">More Projects</a>
+                            </div>
+                        </div>
+    
+                        <span class="number-page">5</span>
+    
+                        <!--Next button-->
+                        <span class="nextprev-btn" data-page ="turn-3">
+                            <i class='bx bx-chevron-right'></i>
+                        </span>
+                    </div>
+    
+                    <!--Page 6 (contact)-->
+                    <div class="page-back">
+                        <h1 class="title">Contact Me!</h1>
+    
+                        <div class="contact-box">
+                            <form action="#">
+                                <input type="text" class="field" placeholder="Full Name" required>
+                                <input type="email" class="field" placeholder="Email Adress" required>
+                                <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                                <input type="submit" class="btn" value="Send Message">
+                            </form>
+                        </div>
+    
+                        <span class="number-page">6</span>
+    
+                        <!--prev button-->
+                        <span class="nextprev-btn back" data-page="turn-3">
+                            <i class='bx bx-chevron-left'></i>
+                        </span>
+    
+                        <a href="#" class="back-profile">
+                            <p>Profile</p>
+                            <i class='bx bxs-user'></i>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
